@@ -1,0 +1,96 @@
+.flex-column {
+  flex-direction: column;
+}
+
+.register {
+  min-height: 65vh;
+  display: flex;
+  background-color: #ffeed1;
+}
+
+.footer {
+  min-height: 35vh;
+  display: flex;
+  background-color: #111118;
+  text-align: center;
+}
+
+.footer img {
+  max-width: 87px;
+  margin-bottom: 24px;
+}
+
+.button {
+  text-decoration: none;
+  line-height: 1;
+  padding: 6px 12px;
+  border: solid 2px #fff;
+  color: #fff;
+  max-width: 120x;
+  text-align: center;
+}
+
+.register .container {
+  display: flex;
+}
+
+.register h2 {
+  font-size: 40px;
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+
+.sign-up {
+  display: flex;
+  border-bottom: solid 2px #00b290;
+  padding-bottom: 12px;
+}
+
+input {
+  border: none;
+  background: none;
+  font-size: 21px;
+  outline: none;
+}
+
+.email-input {
+  flex: 1;
+}
+
+.form {
+  margin: 48px 24px;
+}
+
+.eyes {
+  width: 108px;
+  height: 32px;
+  background-image: url("../Images/eyes_open.svg");
+}
+
+.hand {
+  width: 57px;
+  height: 87px;
+  background-image: url("../Images/ok_hand.svg");
+  align-self: flex-end;
+}
+
+.eyes,
+.hand {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 780px) {
+  .register .container {
+    flex-direction: column;
+  }
+
+  .register h2 {
+    font-size: 30px;
+  }
+
+  .form {
+    margin: 24px 0;
+  }
+}

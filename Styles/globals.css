@@ -1,0 +1,198 @@
+body {
+  font-family: "LunchType-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.section-pad {
+  padding: 0 5vw;
+}
+
+.intro {
+  background-image: url("../Images/intro.jpg");
+  color: #fff;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 820px;
+  margin: auto;
+}
+
+.logo {
+  display: block;
+  max-width: 112px;
+  text-align: center;
+  margin: 0 auto 32px auto;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.intro p {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.appear {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.mix-difference {
+  mix-blend-mode: difference;
+}
+
+.marquee {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  font-size: 5vw;
+  line-height: 1;
+  overflow: hidden;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3000vw);
+  }
+}
+
+.marquee span {
+  animation: moveLeft 200s infinite;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+}
+
+/*------Section: Day-1--------*/
+
+.day {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.day .container {
+  position: relative;
+  z-index: 1;
+}
+
+.day-1 {
+  background-color: #ff74a7;
+}
+
+.date {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.lineUp h2 {
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.lineUp p {
+  font-size: 21px;
+}
+
+.lineUp li {
+  margin-bottom: 20px;
+}
+
+/* -----Down Arrow------- */
+
+.scroll-to {
+  position: absolute;
+  left: 50%;
+  bottom: 2vh;
+  transform: translateX(-50%);
+
+  width: 64px;
+  height: 32px;
+
+  z-index: 2;
+
+  background-image: url("../Images/down-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scroll-to-intro {
+  background-image: url("../Images/down-arrow-light.svg");
+}
+
+/* ----Section: Day-2 (bg-color) ----- */
+
+.day-2 {
+  background-color: #00b290;
+}
+
+/* ----Section: Day-2 (bg-img) ----- */
+
+.day-3 {
+  background-image: url("../Images/day-3.jpg");
+}
+
+@media (max-width: 640px) {
+  .marquee {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 90vw;
+    margin-bottom: 24px;
+  }
+
+  .logo {
+    max-width: 64px;
+    margin-bottom: 20px;
+  }
+
+  .intro p {
+    font-size: 20px;
+  }
+
+  .scroll-to {
+    display: none;
+  }
+
+  .lineUp h2 {
+    font-size: 30px;
+  }
+}

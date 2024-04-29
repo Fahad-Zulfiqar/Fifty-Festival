@@ -1,0 +1,14 @@
+@media (min-width: 640px) {
+  .lineUp li,
+  .date,
+  .shape {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .in-viewport .date,
+  .in-viewport .lineUp li,
+  .in-viewport .shape {
+    opacity: 1;
+  }
+}
